@@ -21,16 +21,16 @@ class SendEmailService{
 		    session_start();
 		}
 
-		include '/var/www/html/db-connection.php';
+		include '/var/www/html/database-connection.php';
 		$this->connection = $conn;
 		$this->status = "None.";
 
 	}
 
 	function sendEmail($subject, $body, $altBody, $email){ 
-		require '/var/www/html/PHPMailer/src/Exception.php';
-		require '/var/www/html/PHPMailer/src/PHPMailer.php';
-		require '/var/www/html/PHPMailer/src/SMTP.php';
+		require '/PHPMailer/src/Exception.php';
+		require '/PHPMailer/src/PHPMailer.php';
+		require '/PHPMailer/src/SMTP.php';
 
 		// Instantiation and passing `true` enables exceptions
 		$mail = new PHPMailer(true);
