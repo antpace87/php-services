@@ -46,9 +46,9 @@ class SendEmailService{
 		    $mail->Port       = 587;                                    // TCP port to connect to
 
 		    //Recipients
-		    $mail->setFrom('info@XXX.com', 'Splitwit');
+		    $mail->setFrom('info@XXX.com', 'XXX');
 		    $mail->addAddress($email);     // Add a recipient
-		    $mail->addReplyTo('info@XXX.com', 'Splitwit');
+		    $mail->addReplyTo('info@XXX.com', 'XXX');
 
 		    // Content
 		    $mail->isHTML(true); // Set email format to HTML
